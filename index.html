@@ -3,136 +3,252 @@
     <head>
         <meta charset="utf-8">
         <title>Maria Strotsyuk</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap-theme.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="layout-lg.css">
     </head>
     <body id="body">
-        <div id="page-top">
         <header id="home">
-            <div id="container">
-            <img src="123.jpg" alt="My photo">
-            <h1><em>Maria<br><span>Strotsyuk</span></em></h1>
-        <div id="navigation">
-            <nav id="navbar">
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li> 
-                        <a href="#education">Education</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#language">Language</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                       <select>
-                <option value="Eng">Eng</option>
-                <option value="Ukr">Ukr</option>
-                        </select> 
-                    </li>
-                </ul>
-            </nav> 
-        </div>
-        </div>
-            <div id="maintext">
-                <p>Hello!</p>
-            <p><b>I'm glad to see you on my web page.</b></p>
-            <p>I like study new interesting things. And I like help people.<br> So if you need help with your psychic or social health  - contact me. Or if you need a website - also contact me.<br><b>It is a great pleasure - to work with you!</b></p>
+            <div id="header-content">
+                <img id="my-photo" src="image/123.jpg" alt="My photo">
+                <h1><em>Maria<br><span id="header-surname">Strotsyuk</span></em></h1>
+                    <div class="container">
+                        <nav class="navbar" id="top-nav">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                  </button>
+                                  <a class="navbar-brand" href="#">Maria Strotsyuk</a>
+                                </div>
+
+                                <div style="height: 1px;" aria-expanded="false" class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+                                  <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Home</a></li>
+                                      <li><a href="#">Education</a></li>
+                                      <li><a href="#">Skills</a></li>
+                                      <li><a href="#">Language</a></li>
+                                      <li><a href="#">Contact</a></li>
+                                    <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ENG <span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#">ENG</a></li>
+                                        <li><a href="#">UKR</a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
             </div>
         </header>
+            <div class="nav-bg">
+                
+            </div>
+        <div class="container content-bg">
+            <div class="row">
+                <div class="col-md-12 content-bg"> 
+                    <div id="maintext">
+                        <p>Hello!</p>
+                        <p><b>I'm glad to see you on my web page.</b></p>
+                        <p>I like study new interesting things. And I like help people.<br> So if you need help with your psychic or social health  - contact me. Or if you need a website - also contact me.<br><b>It is a great pleasure - to work with you!</b></p>
+                    </div>
+                </div>
+            </div>
             <div id="education">
-                <h3 class="textsize">Education</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                    <h3 class="block-header">Education</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 without-pad">
+                        <div class="slider">
+                          <ul>
+                            <li>
+                              <img src="image/11.jpg" />
+                              <p class="img-title"> Ukrainian Catolic University</p>
+                            </li>
+                            <li>
+                              <img src="image/ucu1.jpg" />
+                              <p class="img-title"> </p>
+                            </li>
+                            <li>
+                              <img src="image/ucu1.jpg" />
+                              <p class="img-title"> </p>
+                            </li>
+                          </ul>
+                              <button class="prev">prev</button>
+                              <button class="next">next</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+                <div id="certificates" class="row">
+                    <div class="col-md-12">
+                        <p>Certificates:</p>
+                            <ul>
+                                <li>Intensive French practice</li>
+                                <li>HTML5 App Development Fundamentals</li>
+                            </ul>
+                    </div>
+                </div>
             <div id="skills">
-                <h3 class="textsize">Skills</h3>
-                <div class="sizeskill">
-                    <div class="column">
-                        <div class="column1" id="coolumn1"></div>
+                <div class="row">
+                    <div class="col-md-12"> 
+                    <h3 class="block-header">Skills</h3>
                     </div>
-                    <p>psychology</p>
                 </div>
-                <div class="sizeskill">
-                    
-                </div>
-                <div class="sizeskill">
-                    
-                </div>
-                 <div class="sizeskill">
-                    <div class="column">
-                        <div class="column1" id="coolumn2"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="skills-block">
+                            <div class="column">
+                                <div class="column1" id="coolumn1"></div>
+                            </div>
+                            <p>psychology</p>
+                        </div>
+                        <div class="skills-block">
+                            <div class="column">
+                                <div class="column1" id="coolumn2"></div>
+                            </div>
+                            <p>pedagogy</p>
+                        </div>
                     </div>
-                    <p>pedagogy</p>
-                </div>
-                <div class="sizeskill">
-                    <div class="column">
-                        <div class="column1" id="coolumn3"></div>
+                    <div class="col-md-4">
+                        <div class="skills-block">
+                            <div class="column">
+                                <div class="column1" id="coolumn4"></div>
+                            </div>
+                            <p>HTML</p>
+                        </div>
+                        <div class="skills-block">
+                            <div class="column">
+                                <div class="column1" id="coolumn3"></div>
+                            </div>
+                            <p>fundraising</p>
+                        </div>
                     </div>
-                    <p>fundraising</p>
-                </div>
-                <div class="sizeskill">
-                    
+                    <div class="col-md-4">
+                        <div class="skills-block"> 
+                            <div class="column">
+                                <div class="column1" id="coolumn5"></div>
+                            </div>
+                            <p>CSS</p>
+                        </div>
+                        <div class="skills-block">
+                            <div class="column">
+                                <div class="column1" id="coolumn6"></div>
+                            </div>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-                <div id="language">
-                <h3 class="textsize">Language</h3>
+            <div class="row">
+                <div id="language" class="col-md-12">
+                <h3 class="block-header">Language</h3>
                     <p>Ukrainian</p>
-                    <div class="bigline">
-                        <div class="small-line" id="line1"></div>
+                        <div class="bigline">
+                            <div class="small-line" id="line1"></div>
                         </div>
                     <p>English</p>
-                    <div class="bigline">
-                        <div class="small-line" id="line2"></div>
+                        <div class="bigline">
+                            <div class="small-line" id="line2"></div>
                         </div>
                     <p>French</p>
-                    <div class="bigline">
-                        <div class="small-line" id="line3"></div>
+                        <div class="bigline">
+                            <div class="small-line" id="line3"></div>
                         </div>
                 </div>
-        <div id=contact>
-            <h3 class="textsize">Contact</h3>
-            <form method="post">
-                <div>
-                    <div class="contact1">
-                        <div>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" />
-                        </div>
-                        <div>
-                            <label for="mail">E-mail:</label>
-                            <input type="email" id="mail" />
+            </div>
+                <div id="contact"> 
+                    <div class="row" > 
+                        <div class="col-md-12">
+                        <h3 class="block-header">Contact</h3>
                         </div>
                     </div>
-                    <div class="contact1">
-                        <label for="msg">Message:</label>
-                        <textarea id="msg"></textarea>
+                <form action="https://formspree.io/strotsyuk@ucu.edu.ua"
+                method="post">
+                    <div class="row">
+                    <div>
+                        <div class="contact-block col-md-6">
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name"/>
+                            </div>
+                            <div>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="email"/>
+                            </div>
+                        </div>
+                        <div class="contact-block col-md-6">
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="message"></textarea>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="clear"></div>
                 </div>
-    
-                <div class="button">
-                    <button type="submit">Send</button>
+                <div class="row">
+                    <div class="button col-md-12" id="btn-send">
+                        <button type="submit">Send</button>
+                    </div>
                 </div>
-            </form>
+                </form>
+                </div>
+        
+            <footer id="footer">
+                <div class="row">
+                    <div id="footerleft" class="col-md-6">
+                        <p>&copy; Maria Strotsyuk 2016</p>
+                    </div>
+                    <div id="footerright" class="col-md-6">
+                        <p>
+                            <a href="https://www.facebook.com/maria.strotsyuk">Facebook</a>
+                            strotsyuk@ucu.edu.ua
+                        </p>
+                    </div>
+                </div>
+            </footer>
         </div>
-                    <a href="#home">↑</a>
-        <footer id="footer">
-            <div id="footerleft">
-                <p>&copy; Maria Strotsyuk 2016</p>
-            </div>
-            <div id="footerright">
-                <p>
-                    <a href="https://www.facebook.com/maria.strotsyuk">Facebook</a>
-                    strotsyuk@ucu.edu.ua
-                </p>
-            </div>
-        </footer>
-        </div>
-    
+    </div>   
+        <div id="top-arrow" class="no-display">
+            <a href="#home">
+                <img src="image/strilka.png" alt="Arrow"></a>
+        </div>    
+            
+    <script src="jquery-2.2.3.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="slider.js"></script>
+    <script>
+        var nav = function()
+        { var menu = $('#top-nav'); 
+        var imageHeight = document.getElementById("my-photo").height; 
+        var menu_bg = $('.nav-bg'); 
+            var arrow = $('#top-arrow');
+        $(document).scroll(function(){ 
+            if ( $(this).scrollTop() >= imageHeight ){
+        menu.addClass("fixed-nav");
+            arrow.removeClass("no-display"); 
+        menu_bg.addClass("fixed-nav-bg"); } 
+            else { menu.removeClass("fixed-nav"); 
+        menu_bg.removeClass("fixed-nav-bg");
+            arrow.addClass("no-display"); } }) } 
+        $(document).ready(nav);
+    </script>
+    <script>
+    $('#btn-send').click(function() {
+  $.ajax({
+      url: "https://formspree.io/strotsyuk@ucu.edu.ua",  
+      method: "POST",
+      data: {message: msg.value},
+      dataType: "json"
+  });
+});
+    </script>
     </body>
 </html>
