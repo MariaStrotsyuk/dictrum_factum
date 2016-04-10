@@ -9,12 +9,12 @@
     width: 100%;
 }
 #header-content h1{
-    z-index:100px;
+    z-index:100;
     position:absolute;    
     color:black;
     left:43%;
     top:15%;
-    font-size:800%;
+    font-size:11rem;
     font-family:palatino;
     font-weight:600;
 }
@@ -72,7 +72,7 @@
     font-size:35px;
     font-family:palatino;
     text-align: center;
-    font-weight: 550;}
+    font-weight: 500;}
 #certificates{
     margin-top: 20px;
     font-size:35px;
@@ -194,15 +194,47 @@
     border-top: 1px solid black;
     margin-top: 20px;
 }
-.img-title{
+#social-icons a{
+    display: block;
+}
+#social-icons img{
+    width: 50px;
+    height: 50px;
+}
+#social-icons ul {
+    list-style-type: none;
+    margin-left: 30px;
+}
+#social-icons li{
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+#footerleft p {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+    margin-right: 60px;
+    font-family: palatino;
+    color: #000000;
+}
+.img-title {
     position: absolute;
     bottom: 5%;
     width: 100%;
     text-align: center;
-    font-size: 500%;
     color: #000000;
     font-family: palatino;
     background-color: rgba(156, 163, 154, 0.5);
+    line-height: 18px;
+}
+.img-title h2 {
+    font-size: 200%;
+}
+.img-title p{
+    font-size: 20px;
 }
 .slider {
     width: 100%;
@@ -256,15 +288,15 @@
 }
 
 .slider button.prev {
-left: 0;
+    left: 0;
 }
 
 .slider button.next {
-right: 0;
+    right: 0;
 }
 
 .slider button:hover, .slider button:active {
-opacity: 1.0;
+    opacity: 1.0;
 }
 .without-pad {
     padding:0;
@@ -281,3 +313,31 @@ opacity: 1.0;
     #top-arrow {
     display:none;}
     }
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+    } 
+    .fixed-nav {
+    margin-left: 0;
+    }
+    #header-content h1 {
+    font-size: 8rem;}
+    
+}
+@media (max-width: 992px) {
+    #footerleft p {
+    margin-right: 0px; 
+    text-align: center;}
+    #social-icons ul {
+    text-align: center;
+    padding: 0;
+    margin-left: 0;
+    }
+    #footerright li{
+    margin: 0;
+    }
+    #footerright li + li {
+    margin-left:20px;
+    }
+}

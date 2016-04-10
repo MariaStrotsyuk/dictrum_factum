@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Maria Strotsyuk</title>
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap_css/bootstrap.css">
         <link rel="stylesheet" href="bootstrap/bootstrap-theme.css">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -26,7 +25,7 @@
                                   <a class="navbar-brand" href="#">Maria Strotsyuk</a>
                                 </div>
 
-                                <div style="height: 1px;" aria-expanded="false" class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+                                <div style="height: 1px;" aria-expanded="false" class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" role="img">
                                   <ul class="nav navbar-nav navbar-right">
                                     <li><a href="#home">Home</a></li>
                                       <li><a href="#education">Education</a></li>
@@ -71,20 +70,26 @@
                         <div class="slider">
                           <ul>
                             <li>
-                              <img src="image/11.jpg" />
-                              <p class="img-title"> Ukrainian Catolic University</p>
+                              <img src="image/11.jpg" alt="My University"/>
+                                <div class="img-title"> 
+                                    <h2>Ukrainian Catholic University</h2>
+                                    <p>Bachelor's degree:</p>
+                                    <p>Social pedagogy</p>
+                                    <p>2014-2018</p>
+                                </div>
+                              
                             </li>
                             <li>
-                              <img src="image/ucu1.jpg" />
+                              <img src="image/ucu1.jpg" alt="My University"/>
                               <p class="img-title"> </p>
                             </li>
                             <li>
-                              <img src="image/ucu1.jpg" />
+                              <img src="image/ucu1.jpg" alt="My University"/>
                               <p class="img-title"> </p>
                             </li>
                           </ul>
-                              <button class="prev">prev</button>
-                              <button class="next">next</button>
+                              <button class="prev"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button>
+                              <button class="next"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></button>
                         </div>
                     </div>
                 </div>
@@ -207,23 +212,32 @@
                         <p>&copy; Maria Strotsyuk 2016</p>
                     </div>
                     <div id="footerright" class="col-md-6">
-                        <p>
-                            <a href="https://www.facebook.com/maria.strotsyuk">Facebook</a>
-                            strotsyuk@ucu.edu.ua
-                        </p>
+                        <div id="social-icons">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/maria.strotsyuk"> <img src="image/fb.png" alt="Facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/MariaStrotsyuk"><img src="image/gh.png" alt="GitHub"></a>
+                                </li>
+                                <li>
+                                    <a href="mailto:strotsyuk@ucu.edu.ua"><img src="image/email.png" alt="E-mail"></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </footer>
         </div>
-    </div>   
+        
         <div id="top-arrow" class="no-display">
             <a href="#home">
                 <img src="image/strilka.png" alt="Arrow"></a>
         </div>    
             
-    <script src="jquery-2.2.3.min.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
-    <script src="slider.js"></script>
+    <script src="js/slider.js"></script>
     <script>
         var nav = function()
         { var menu = $('#top-nav'); 
