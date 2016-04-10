@@ -42,6 +42,7 @@
 .navbar li a:hover {
     color:#C26F39;
     background-color:#000000;
+    border-radius: 25px
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background: #000000;
@@ -95,35 +96,50 @@
     bottom: 0;
     left: 50px;
 }
-.column {
+.bigcolumn {
     width: 45px;
     height: 250px;
-    background-color: rgba(255, 227, 52, 0.9);
+    background-color:rgba(255, 227, 52, 0.9);
+    border-radius: 25px;
     float: left;
-    margin-right: 10px;}
-.column1 {
+    margin-right: 10px;
+   
+}
+.smallcolumn {
+    
     width: 45px;
-    background-color:rgba(156, 163, 154, 0.9);}
+    background-color: rgba(156, 163, 154, 0.9);
+    border-radius: 25px;
+}
 #coolumn1 {
-    height: 35%;}
+    height: 35%;
+}
 #coolumn2 {
-    height: 35%;}
+    height: 35%;
+}
 #coolumn3 {
-    height: 75%;}
+    height: 50%;
+}
 #coolumn4 {
-    height: 50%}
+    height: 35%;
+}
 #coolumn5 {
-    height: 60%}
+    height: 60%;
+}
 #coolumn6{
-    height: 80%}
+    height: 80%;
+}
 .bigline {
     width: 100%;
     height: 50px;
-    background-color: rgba(156, 163, 154, 0.9);}
+    background-color: rgba(156, 163, 154, 0.9);
+    border-radius: 25px;
+}
 .small-line {
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 227, 52, 0.9);}
+    background-color: rgba(255, 227, 52, 0.9);
+    border-radius: 25px;}
 #line1 {
     width: 100%;}
 #line2{
@@ -144,6 +160,7 @@
     display: block;
     background-color: #D1D0BC;
     border-style: none;
+    border-radius: 25px
 }
 .contact-block input {
     width: 100%;
@@ -173,6 +190,7 @@
     border-style: none;
     margin: 0 auto;
     display: block;
+    border-radius: 25px
     
 }
 .no-display{
@@ -185,6 +203,7 @@
     position:fixed;
     bottom: 0;
     z-index: 15;
+    border-radius: 25px
 }
 #top-arrow a img{
     height: 60px;
