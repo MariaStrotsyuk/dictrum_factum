@@ -77,7 +77,6 @@
                                     <p>Social pedagogy</p>
                                     <p>2014-2018</p>
                                 </div>
-                              
                             </li>
                             <li>
                               <img src="image/ucu1.jpg" alt="My University"/>
@@ -89,7 +88,7 @@
                             </li>
                           </ul>
                               <button class="prev"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button>
-                              <button class="next"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></button>
+                              <button class="next"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
                         </div>
                     </div>
                 </div>
@@ -110,44 +109,44 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="skills-block">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="skills-block col-xs-6">
                             <div class="bigcolumn">
-                                <div class="smallcolumn" id="coolumn1"></div>
+                                <div class="smallcolumn" id="column1"></div>
                             </div>
-                            <p>psychology</p>
+                            <p>Psychology</p>
                         </div>
-                        <div class="skills-block">
+                        <div class="skills-block col-xs-6">
                             <div class="bigcolumn">
-                                <div class="smallcolumn" id="coolumn2"></div>
+                                <div class="smallcolumn" id="column2"></div>
                             </div>
-                            <p>pedagogy</p>
+                            <p>Pedagogy</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="skills-block">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="skills-block col-xs-6">
                             <div class="bigcolumn">
-                                <div class="smallcolumn" id="coolumn4"></div>
+                                <div class="smallcolumn" id="column4"></div>
                             </div>
                             <p>HTML</p>
                         </div>
-                        <div class="skills-block">
+                        <div class="skills-block col-xs-6">
                             <div class="bigcolumn">
-                                <div class="smallcolumn" id="coolumn3"></div>
+                                <div class="smallcolumn" id="column3"></div>
                             </div>
-                            <p>fundraising</p>
+                            <p>Fundraising</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="skills-block"> 
+                    <div class="col-md-4 col-xs-12">
+                        <div class="skills-block col-xs-6"> 
                             <div class="bigcolumn">
-                                <div class="smallcolumn" id="coolumn5"></div>
+                                <div class="smallcolumn" id="column5"></div>
                             </div>
                             <p>CSS</p>
                         </div>
-                        <div class="skills-block">
+                        <div class="skills-block col-xs-6">
                             <div class="bigcolumn">
-                                <div class="smallcolumn" id="coolumn6"></div>
+                                <div class="smallcolumn" id="column6"></div>
                             </div>
                             <p>JavaScript</p>
                         </div>
@@ -232,12 +231,14 @@
         
         <div id="top-arrow" class="no-display">
             <a href="#home">
-                <img src="image/strilka.png" alt="Arrow"></a>
+                <img src="image/strilka.png" alt="arrow">
+            </a>    
         </div>    
             
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/jquery.viewport.mini.js"></script>
     <script>
         var nav = function()
         { var menu = $('#top-nav'); 
@@ -263,6 +264,85 @@
         dataType: "json"
   });
 });
+    </script>
+    <script>
+    $('#top-arrow a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+    </script>
+    <script>
+        $(document).ready(function() { 
+        $("nav a").each(function() { 
+            $(this).bind("click", function(e) { e.stopPropagation(); 
+            $('html,body').animate({ 
+                scrollTop: ($($(this).attr('href')).offset().top ) }, 
+                750); return false; 
+            }); 
+        });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+        $(window).scroll( function(){
+        $("#column1:in-viewport").each(function() {
+            var firstColumn = $("#column1");
+            firstColumn.animate({height: '175px', opacity: '1'}, "slow");
+        });
+        });
+});
+    </script>
+     <script>
+    $(document).ready(function() {
+        $(window).scroll( function(){
+        $("#column2:in-viewport").each(function() {
+            var firstColumn = $("#column2");
+            firstColumn.animate({height: '185px', opacity: '1'}, "slow");
+        });
+        });
+});
+    </script>
+    <script>
+     $(document).ready(function() {
+        $(window).scroll( function(){
+        $("#column3:in-viewport").each(function() {
+            var firstColumn = $("#column3");
+            firstColumn.animate({height: '85px', opacity: '1'}, "slow");
+        });
+        });
+});    
+    </script>
+    <script>
+     $(document).ready(function() {
+        $(window).scroll( function(){
+        $("#column4:in-viewport").each(function() {
+            var firstColumn = $("#column4");
+            firstColumn.animate({height: '145px', opacity: '1'}, "slow");
+        });
+        });
+});    
+    </script>
+    <script>
+     $(document).ready(function() {
+        $(window).scroll( function(){
+        $("#column5:in-viewport").each(function() {
+            var firstColumn = $("#column5");
+            firstColumn.animate({height: '115px', opacity: '1'}, "slow");
+        });
+        });
+});    
+    </script>
+    <script>
+     $(document).ready(function() {
+        $(window).scroll( function(){
+        $("#column6:in-viewport").each(function() {
+            var firstColumn = $("#column6");
+            firstColumn.animate({height: '75px', opacity: '1'}, "slow");
+        });
+        });
+});    
     </script>
     </body>
 </html>
